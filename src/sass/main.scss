@@ -1,0 +1,18 @@
+// @import "base/animations";
+// @import "base/typography";
+// @import "base/utilities";
+@import "abstracts/variables";
+// @import "abstracts/functions";
+@import "abstracts/mixins";
+@import "base/base";
+@import "pages/home";
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@include media(320px) {
+  background: red;
+}

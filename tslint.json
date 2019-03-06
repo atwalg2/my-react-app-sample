@@ -1,5 +1,5 @@
 {
-    "extends": ["tslint-react"],
+    "extends": ["tslint-no-circular-imports"],
     "rules": {
         "align": [
             true,
@@ -12,7 +12,7 @@
             true,
             "check-space"
         ],
-        "curly": true,
+        "curly": false,
         "eofline": false,
         "forin": true,
         "indent": [ true, "spaces" ],
@@ -21,7 +21,7 @@
         "jsx-no-lambda": false,
         "jsx-no-multiline-js": false,
         "label-position": true,
-        "max-line-length": [ true, 250 ],
+        "max-line-length": [ true, 200 ],
         "member-ordering": [
             true,
             "public-before-private",
@@ -31,8 +31,8 @@
         "no-any": false,
         "no-var-keyword": true,
         "no-arg": true,
-        "no-bitwise": true,
-        "no-console": [ false ],
+        "no-bitwise": false,
+        "no-console": [ true ],
         "no-consecutive-blank-lines": true,
         "no-construct": true,
         "no-debugger": true,
@@ -44,6 +44,7 @@
         "no-switch-case-fall-through": true,
         "no-trailing-whitespace": false,
         "no-unused-expression": true,
+        "no-unused-variable": true,
         "no-use-before-declare": true,
         "one-line": [
             true,
@@ -53,7 +54,7 @@
             "check-whitespace"
         ],
         "quotemark": [true, "single", "jsx-double"],
-        "radix": true,
+        "radix": false,
         "semicolon": [true, "always"],
         "switch-default": true,
 

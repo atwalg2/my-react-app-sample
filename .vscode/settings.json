@@ -1,0 +1,22 @@
+{
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": -0.9,
+    "tslint.autoFixOnSave": true,
+    "files.exclude": {
+        "**/*.js": {"when": "$(basename).ts"},
+        "**/*.js.map": true
+    },
+    "azureFunctions.showCoreToolsWarning": false,
+    "azureFunctions.showProjectWarning": false,
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.external.windowsExec": "C:\\cmder\\Cmder.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/K",
+        "C:\\cmder\\vendor\\init.bat"
+    ],
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\cmd.exe"
+}

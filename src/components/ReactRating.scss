@@ -1,0 +1,374 @@
+$fontSize: 60px;
+$color-gold: rgb(255,223,0);
+$color-red: #f05f5f;
+$gradiant-color: $color-red;
+$size: 40px;
+$strokeSize: 2px;
+$strokeColor: #bbb;
+
+.rating {
+  text-overflow: hidden;
+
+  .full {
+    display: inline-block;
+    margin: 0; /* for demo snippet */
+    line-height: 1em; /* for demo snippet */
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: $fontSize;
+    // background: linear-gradient(to right, #7db9e8 50%, rgba(0,0,0,0) 50%);
+    color: $gradiant-color;
+    -webkit-text-stroke: $strokeSize $strokeColor;
+  }
+
+  .top {
+    display: inline-block;
+    margin: 0; /* for demo snippet */
+    line-height: 1em; /* for demo snippet */
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: $fontSize;
+    // background: linear-gradient(to right, #7db9e8 50%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(to bottom, $gradiant-color 50%, rgba(0,0,0,0) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: $strokeSize $strokeColor;
+
+  }
+
+  
+  .left {
+    display: inline-block;
+    margin: 0; /* for demo snippet */
+    line-height: 1em; /* for demo snippet */
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: $fontSize;
+    // background: linear-gradient(to right, #7db9e8 50%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(to right, $gradiant-color 50%, rgba(0,0,0,0) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: $strokeSize $strokeColor;
+  }
+
+  .right {
+    display: inline-block;
+    margin: 0; /* for demo snippet */
+    line-height: 1em; /* for demo snippet */
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: $fontSize;
+    // background: linear-gradient(to right, #7db9e8 50%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(to left, $gradiant-color 50%, rgba(0,0,0,0) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: $strokeSize $strokeColor;
+
+  }
+}
+
+.glassInner1 {
+  // width: 75px;
+  // height: 55px;
+  width: calc(#{$fontSize} * 0.20);
+  height: calc(#{$fontSize} * 0.18);
+  opacity: 0.9;
+/*   background: linear-gradient(to bottom, #fff 60%, rgba(255, 255, 255, 0.2) 50%); */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  // top: 83px;
+  // left: 78px;
+  top: calc(#{$fontSize} * 0.36);
+  left: calc(#{$fontSize} * 0.161);
+  
+  // top: calc(#{$fontSize} * 0.35); 
+  // left: calc(#{$fontSize} * 0.42);
+  z-index: 8;
+  border-radius: 50%;
+}
+.glassInner2 {
+  width: calc(#{$fontSize} * 0.20);
+  height: calc(#{$fontSize} * 0.18);
+  opacity: .9;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  // top: 83px;
+  top: calc(#{$fontSize} * 0.36); 
+  left: calc(#{$fontSize} * 0.42);
+  z-index: 8;
+  border-radius: 50%;
+}
+.glassInner3 {
+  // width: 200px;
+  // height: 300px;
+  width: calc(#{$fontSize} * 0.5);
+  height: calc(#{$fontSize} * 0.75);
+  opacity: .2;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 30%);
+  position: absolute;
+  // top: 120px;
+  top: calc(#{$fontSize} * 0.535);
+  // top:220px;
+  // left: 50px;
+  left: calc(#{$fontSize} * 0.05);
+  z-index: 8;
+  border-radius: 50%;
+}
+/*
+linear-gradient(to bottom right, red, yellow)
+
+linear-gradient(to bottom right, blue 25%, yellow 25%)
+
+linear-gradient(to right, blue 50%, yellow 50%)
+
+ CLIP PATH
+  -webkit-clip-path: polygon(51% 50%, 100% 50%, 100% 100%, 51% 100%);
+  clip-path: polygon(51% 50%, 100% 50%, 100% 100%, 51% 100%);
+*/
+
+/*
+  $px: 2px;
+  $outer: white;
+  $inner: #ee0022;
+
+  
+  $heartContainer:
+    (1*$px) (-1*$px) 0 $outer,
+    (2*$px) (-2*$px) 0 $outer,
+    (3*$px) (-3*$px) 0 $outer,
+    (4*$px) (-4*$px) 0 $outer,
+    (5*$px) (-5*$px) 0 $outer,
+    (6*$px) (-6*$px) 0 $outer,
+    (6*$px) (-7*$px) 0 $outer,
+    (6*$px) (-8*$px) 0 $outer,
+    (6*$px) (-9*$px) 0 $outer,
+    (5*$px) (-10*$px) 0 $outer,
+    (4*$px) (-11*$px) 0 $outer,
+    (3*$px) (-11*$px) 0 $outer,
+    (2*$px) (-11*$px) 0 $outer,
+    (1*$px) (-10*$px) 0 $outer,
+    (0*$px) (-9*$px) 0 $outer,
+    
+    // left side of heart;
+    (-1*$px) (-1*$px) 0 $outer,
+    (-2*$px) (-2*$px) 0 $outer,
+    (-3*$px) (-3*$px) 0 $outer,
+    (-4*$px) (-4*$px) 0 $outer,
+    (-5*$px) (-5*$px) 0 $outer,
+    (-6*$px) (-6*$px) 0 $outer,
+    (-6*$px) (-7*$px) 0 $outer,
+    (-6*$px) (-8*$px) 0 $outer,
+    (-6*$px) (-9*$px) 0 $outer,
+    (-5*$px) (-10*$px) 0 $outer,
+    (-4*$px) (-11*$px) 0 $outer,
+    (-3*$px) (-11*$px) 0 $outer,
+    (-2*$px) (-11*$px) 0 $outer,
+    (-1*$px) (-10*$px) 0 $outer;
+  
+  $topRight: 
+    (0*$px) (-7*$px) 0 $inner,
+    (1*$px) (-9*$px) 0 $inner,
+    (1*$px) (-8*$px) 0 $inner,
+    (1*$px) (-7*$px) 0 $inner,
+    (1*$px) (-6*$px) 0 $inner,
+    (2*$px) (-10*$px) 0 $inner,
+    (2*$px) (-9*$px) 0 $inner,
+    (2*$px) (-8*$px) 0 $inner,
+    (2*$px) (-7*$px) 0 $inner,
+    (3*$px) (-10*$px) 0 $inner,
+    (3*$px) (-9*$px) 0 $inner,
+    (3*$px) (-8*$px) 0 $inner,
+    (3*$px) (-7*$px) 0 $inner,
+    (3*$px) (-6*$px) 0 $inner,
+    (4*$px) (-10*$px) 0 $inner,
+    (4*$px) (-9*$px) 0 $inner,
+    (4*$px) (-8*$px) 0 $inner,
+    (4*$px) (-7*$px) 0 $inner,
+    (5*$px) (-9*$px) 0 $inner,
+    (5*$px) (-8*$px) 0 $inner,
+    (5*$px) (-7*$px) 0 $inner,
+    (5*$px) (-6*$px) 0 $inner;
+  
+  $bottomRight:
+    (0*$px) (-1*$px) 0 $inner,
+    (0*$px) (-3*$px) 0 $inner,
+    (0*$px) (-5*$px) 0 $inner,
+    (1*$px) (-2*$px) 0 $inner,
+    (1*$px) (-3*$px) 0 $inner,
+    (1*$px) (-4*$px) 0 $inner,
+    (1*$px) (-5*$px) 0 $inner,
+    (2*$px) (-3*$px) 0 $inner,
+    (2*$px) (-4*$px) 0 $inner,
+    (2*$px) (-5*$px) 0 $inner,
+    (2*$px) (-6*$px) 0 $inner,
+    (3*$px) (-4*$px) 0 $inner,
+    (3*$px) (-5*$px) 0 $inner,
+    (4*$px) (-5*$px) 0 $inner,
+    (4*$px) (-6*$px) 0 $inner;
+  
+  $bottomLeft:
+    (0*$px) (-2*$px) 0 $inner,
+    (0*$px) (-4*$px) 0 $inner,
+    (0*$px) (-6*$px) 0 $inner,
+    (-1*$px) (-2*$px) 0 $inner,
+    (-1*$px) (-3*$px) 0 $inner,
+    (-1*$px) (-4*$px) 0 $inner,
+    (-1*$px) (-5*$px) 0 $inner,
+    (-2*$px) (-3*$px) 0 $inner,
+    (-2*$px) (-4*$px) 0 $inner,
+    (-2*$px) (-5*$px) 0 $inner,
+    (-2*$px) (-6*$px) 0 $inner,
+    (-3*$px) (-4*$px) 0 $inner,
+    (-3*$px) (-5*$px) 0 $inner,
+    (-4*$px) (-5*$px) 0 $inner,
+    (-4*$px) (-6*$px) 0 $inner;
+
+  $topLeft:
+    (0*$px) (-8*$px) 0 $inner,
+    (-1*$px) (-6*$px) 0 $inner,
+    (-1*$px) (-7*$px) 0 lighten($inner,5%),
+    (-1*$px) (-8*$px) 0 lighten($inner,15%),
+    (-1*$px) (-9*$px) 0 $inner,
+    (-2*$px) (-7*$px) 0 lighten($inner,15%),
+    (-2*$px) (-8*$px) 0 lighten($inner,20%),
+    (-2*$px) (-9*$px) 0 lighten($inner,15%),
+    (-2*$px) (-10*$px) 0 lighten($inner,15%),
+    (-3*$px) (-6*$px) 0 lighten($inner,5%),
+    (-3*$px) (-7*$px) 0 lighten($inner,15%),
+    (-3*$px) (-8*$px) 0 lighten($inner,25%),
+    (-3*$px) (-9*$px) 0 lighten($inner,20%),
+    (-3*$px) (-10*$px) 0 lighten($inner,5%),
+    (-4*$px) (-7*$px) 0 lighten($inner,15%),
+    (-4*$px) (-8*$px) 0 lighten($inner,15%),
+    (-4*$px) (-9*$px) 0 lighten($inner,15%),
+    (-4*$px) (-10*$px) 0 lighten($inner,5%),
+    (-5*$px) (-6*$px) 0 lighten($inner,15%),
+    (-5*$px) (-7*$px) 0 lighten($inner,5%),
+    (-5*$px) (-8*$px) 0 lighten($inner,5%),
+    (-5*$px) (-9*$px) 0 lighten($inner,5%);
+
+
+.heart {
+  width: $px;
+  height: $px;
+  position: absolute;
+  background: $outer;
+
+  box-shadow: 
+    $heartContainer , 
+    $topRight ,
+    $bottomRight ,
+    $bottomLeft ,
+    $topLeft;
+
+  &.one:hover{
+    box-shadow: $heartContainer , $topLeft;
+  }
+}
+
+@keyframes heartFill1 {
+ 
+  0% {  box-shadow: $heartContainer , $topRight , $bottomRight , $bottomLeft , $topLeft; }
+  2% {  box-shadow: $heartContainer , $bottomRight , $bottomLeft , $topLeft; }
+  4% {  box-shadow: $heartContainer , $bottomLeft , $topLeft; }
+  6% {  box-shadow: $heartContainer , $topLeft; }
+  8% {  box-shadow: $heartContainer; }
+  
+  66% { box-shadow: $heartContainer , $topLeft , $bottomLeft; }
+  70% { box-shadow: $heartContainer , $topLeft , $bottomLeft , $topRight , $bottomRight; }
+  
+}
+
+@keyframes heartFill2 {
+ 
+  10% {  box-shadow: $heartContainer , $topRight , $bottomRight , $bottomLeft , $topLeft; }
+  12% {  box-shadow: $heartContainer , $bottomRight , $bottomLeft , $topLeft; }
+  14% {  box-shadow: $heartContainer , $bottomLeft , $topLeft; }
+  16% {  box-shadow: $heartContainer , $topLeft; }
+  18% {  box-shadow: $heartContainer; }
+  
+  58% { box-shadow: $heartContainer , $topLeft , $bottomLeft; }
+  62% { box-shadow: $heartContainer , $topLeft , $bottomLeft , $topRight , $bottomRight; }
+  
+}
+
+@keyframes heartFill3 {
+ 
+  20% {  box-shadow: $heartContainer , $topRight , $bottomRight , $bottomLeft , $topLeft; }
+  22% {  box-shadow: $heartContainer , $bottomRight , $bottomLeft , $topLeft; }
+  24% {  box-shadow: $heartContainer , $bottomLeft , $topLeft; }
+  26% {  box-shadow: $heartContainer , $topLeft; }
+  28% {  box-shadow: $heartContainer; }
+  
+  50% { box-shadow: $heartContainer , $topLeft , $bottomLeft; }
+  54% { box-shadow: $heartContainer , $topLeft , $bottomLeft , $topRight , $bottomRight; }
+  
+}
+
+
+
+.heartContainer {
+    
+  $w: $px * 240;
+  $h: $px * 60;
+  
+  background: rgba(8,14,32,0.8);
+  position: absolute;
+  box-shadow: 0 0 ($px*8) ($px*6) rgba(8,14,32,0.8);
+  
+  border-radius: $px * 8;
+  width: $w;
+  height: $h;
+  
+  left: 50%; margin-left: -( $w/2 );
+  top: 50%; margin-top: -( $h/2 );
+  
+  .heart { bottom: 50%; left: 50%; margin-bottom: -($px*18); }
+  .one { margin-left: -($px*16); }
+}
+*/
+
+.heart {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  background: white;
+}
+.heart.empty {
+  box-shadow: 2px -2px 0 white, 4px -4px 0 white, 6px -6px 0 white, 8px -8px 0 white, 10px -10px 0 white, 12px -12px 0 white, 12px -14px 0 white, 12px -16px 0 white, 12px -18px 0 white, 10px -20px 0 white, 8px -22px 0 white, 6px -22px 0 white, 4px -22px 0 white, 2px -20px 0 white, 0px -18px 0 white, -2px -2px 0 white, -4px -4px 0 white, -6px -6px 0 white, -8px -8px 0 white, -10px -10px 0 white, -12px -12px 0 white, -12px -14px 0 white, -12px -16px 0 white, -12px -18px 0 white, -10px -20px 0 white, -8px -22px 0 white, -6px -22px 0 white, -4px -22px 0 white, -2px -20px 0 white;
+}
+.heart.one {
+  box-shadow: 
+    2px -2px 0 white, 4px -4px 0 white, 6px -6px 0 white, 8px -8px 0 white, 10px -10px 0 white, 12px -12px 0 white, 12px -14px 0 white, 12px -16px 0 white, 12px -18px 0 white, 10px -20px 0 white, 8px -22px 0 white, 6px -22px 0 white, 4px -22px 0 white, 2px -20px 0 white, 0px -18px 0 white, -2px -2px 0 white, -4px -4px 0 white, -6px -6px 0 white, -8px -8px 0 white, -10px -10px 0 white, -12px -12px 0 white, -12px -14px 0 white, -12px -16px 0 white, -12px -18px 0 white, -10px -20px 0 white, -8px -22px 0 white, -6px -22px 0 white, -4px -22px 0 white, -2px -20px 0 white,
+    -50% -50% #e02;
+}
+.heart.two {
+  box-shadow: 2px -2px 0 white, 4px -4px 0 white, 6px -6px 0 white, 8px -8px 0 white, 10px -10px 0 white, 12px -12px 0 white, 12px -14px 0 white, 12px -16px 0 white, 12px -18px 0 white, 10px -20px 0 white, 8px -22px 0 white, 6px -22px 0 white, 4px -22px 0 white, 2px -20px 0 white, 0px -18px 0 white, -2px -2px 0 white, -4px -4px 0 white, -6px -6px 0 white, -8px -8px 0 white, -10px -10px 0 white, -12px -12px 0 white, -12px -14px 0 white, -12px -16px 0 white, -12px -18px 0 white, -10px -20px 0 white, -8px -22px 0 white, -6px -22px 0 white, -4px -22px 0 white, -2px -20px 0 white, 0px -16px 0 #e02, -2px -12px 0 #e02, -2px -14px 0 #ff092c, -2px -16px 0 #ff3c57, -2px -18px 0 #e02, -4px -14px 0 #ff3c57, -4px -16px 0 #ff556d, -4px -18px 0 #ff3c57, -4px -20px 0 #ff3c57, -6px -12px 0 #ff092c, -6px -14px 0 #ff3c57, -6px -16px 0 #ff6f83, -6px -18px 0 #ff556d, -6px -20px 0 #ff092c, -8px -14px 0 #ff3c57, -8px -16px 0 #ff3c57, -8px -18px 0 #ff3c57, -8px -20px 0 #ff092c, -10px -12px 0 #ff3c57, -10px -14px 0 #ff092c, -10px -16px 0 #ff092c, -10px -18px 0 #ff092c, 0px -4px 0 #e02, 0px -8px 0 #e02, 0px -12px 0 #e02, -2px -4px 0 #e02, -2px -6px 0 #e02, -2px -8px 0 #e02, -2px -10px 0 #e02, -4px -6px 0 #e02, -4px -8px 0 #e02, -4px -10px 0 #e02, -4px -12px 0 #e02, -6px -8px 0 #e02, -6px -10px 0 #e02, -8px -10px 0 #e02, -8px -12px 0 #e02;
+}
+.heart.three {
+  box-shadow: 2px -2px 0 white, 4px -4px 0 white, 6px -6px 0 white, 8px -8px 0 white, 10px -10px 0 white, 12px -12px 0 white, 12px -14px 0 white, 12px -16px 0 white, 12px -18px 0 white, 10px -20px 0 white, 8px -22px 0 white, 6px -22px 0 white, 4px -22px 0 white, 2px -20px 0 white, 0px -18px 0 white, -2px -2px 0 white, -4px -4px 0 white, -6px -6px 0 white, -8px -8px 0 white, -10px -10px 0 white, -12px -12px 0 white, -12px -14px 0 white, -12px -16px 0 white, -12px -18px 0 white, -10px -20px 0 white, -8px -22px 0 white, -6px -22px 0 white, -4px -22px 0 white, -2px -20px 0 white, 0px -16px 0 #e02, -2px -12px 0 #e02, -2px -14px 0 #ff092c, -2px -16px 0 #ff3c57, -2px -18px 0 #e02, -4px -14px 0 #ff3c57, -4px -16px 0 #ff556d, -4px -18px 0 #ff3c57, -4px -20px 0 #ff3c57, -6px -12px 0 #ff092c, -6px -14px 0 #ff3c57, -6px -16px 0 #ff6f83, -6px -18px 0 #ff556d, -6px -20px 0 #ff092c, -8px -14px 0 #ff3c57, -8px -16px 0 #ff3c57, -8px -18px 0 #ff3c57, -8px -20px 0 #ff092c, -10px -12px 0 #ff3c57, -10px -14px 0 #ff092c, -10px -16px 0 #ff092c, -10px -18px 0 #ff092c, 0px -4px 0 #e02, 0px -8px 0 #e02, 0px -12px 0 #e02, -2px -4px 0 #e02, -2px -6px 0 #e02, -2px -8px 0 #e02, -2px -10px 0 #e02, -4px -6px 0 #e02, -4px -8px 0 #e02, -4px -10px 0 #e02, -4px -12px 0 #e02, -6px -8px 0 #e02, -6px -10px 0 #e02, -8px -10px 0 #e02, -8px -12px 0 #e02, 0px -14px 0 #e02, 2px -18px 0 #e02, 2px -16px 0 #e02, 2px -14px 0 #e02, 2px -12px 0 #e02, 4px -20px 0 #e02, 4px -18px 0 #e02, 4px -16px 0 #e02, 4px -14px 0 #e02, 6px -20px 0 #e02, 6px -18px 0 #e02, 6px -16px 0 #e02, 6px -14px 0 #e02, 6px -12px 0 #e02, 8px -20px 0 #e02, 8px -18px 0 #e02, 8px -16px 0 #e02, 8px -14px 0 #e02, 10px -18px 0 #e02, 10px -16px 0 #e02, 10px -14px 0 #e02, 10px -12px 0 #e02;
+}
+.heart.four {
+  box-shadow: 2px -2px 0 white, 4px -4px 0 white, 6px -6px 0 white, 8px -8px 0 white, 10px -10px 0 white, 12px -12px 0 white, 12px -14px 0 white, 12px -16px 0 white, 12px -18px 0 white, 10px -20px 0 white, 8px -22px 0 white, 6px -22px 0 white, 4px -22px 0 white, 2px -20px 0 white, 0px -18px 0 white, -2px -2px 0 white, -4px -4px 0 white, -6px -6px 0 white, -8px -8px 0 white, -10px -10px 0 white, -12px -12px 0 white, -12px -14px 0 white, -12px -16px 0 white, -12px -18px 0 white, -10px -20px 0 white, -8px -22px 0 white, -6px -22px 0 white, -4px -22px 0 white, -2px -20px 0 white, 0px -16px 0 #e02, -2px -12px 0 #e02, -2px -14px 0 #ff092c, -2px -16px 0 #ff3c57, -2px -18px 0 #e02, -4px -14px 0 #ff3c57, -4px -16px 0 #ff556d, -4px -18px 0 #ff3c57, -4px -20px 0 #ff3c57, -6px -12px 0 #ff092c, -6px -14px 0 #ff3c57, -6px -16px 0 #ff6f83, -6px -18px 0 #ff556d, -6px -20px 0 #ff092c, -8px -14px 0 #ff3c57, -8px -16px 0 #ff3c57, -8px -18px 0 #ff3c57, -8px -20px 0 #ff092c, -10px -12px 0 #ff3c57, -10px -14px 0 #ff092c, -10px -16px 0 #ff092c, -10px -18px 0 #ff092c, 0px -4px 0 #e02, 0px -8px 0 #e02, 0px -12px 0 #e02, -2px -4px 0 #e02, -2px -6px 0 #e02, -2px -8px 0 #e02, -2px -10px 0 #e02, -4px -6px 0 #e02, -4px -8px 0 #e02, -4px -10px 0 #e02, -4px -12px 0 #e02, -6px -8px 0 #e02, -6px -10px 0 #e02, -8px -10px 0 #e02, -8px -12px 0 #e02, 0px -14px 0 #e02, 2px -18px 0 #e02, 2px -16px 0 #e02, 2px -14px 0 #e02, 2px -12px 0 #e02, 4px -20px 0 #e02, 4px -18px 0 #e02, 4px -16px 0 #e02, 4px -14px 0 #e02, 6px -20px 0 #e02, 6px -18px 0 #e02, 6px -16px 0 #e02, 6px -14px 0 #e02, 6px -12px 0 #e02, 8px -20px 0 #e02, 8px -18px 0 #e02, 8px -16px 0 #e02, 8px -14px 0 #e02, 10px -18px 0 #e02, 10px -16px 0 #e02, 10px -14px 0 #e02, 10px -12px 0 #e02, 0px -2px 0 #e02, 0px -6px 0 #e02, 0px -10px 0 #e02, 2px -4px 0 #e02, 2px -6px 0 #e02, 2px -8px 0 #e02, 2px -10px 0 #e02, 4px -6px 0 #e02, 4px -8px 0 #e02, 4px -10px 0 #e02, 4px -12px 0 #e02, 6px -8px 0 #e02, 6px -10px 0 #e02, 8px -10px 0 #e02, 8px -12px 0 #e02;
+}
+
+.heartContainer {
+  background: rgba(8, 14, 32, 0.8);
+  position: absolute;
+  box-shadow: 0 0 16px 12px rgba(8, 14, 32, 0.8);
+  border-radius: 16px;
+  width: 480px;
+  height: 120px;
+  left: 50%;
+  margin-left: -240px;
+  top: 50%;
+  margin-top: -60px;
+}
+.heartContainer .heart {
+  bottom: 50%;
+  left: 50%;
+  margin-bottom: -36px;
+}
+.heartContainer .one {
+  margin-left: -32px;
+}

@@ -1,0 +1,9 @@
+{ 
+    "api": {
+        "clientId": "900bdc38-5ce0-4463-8a51-ff50461c2998",
+        "auth": "http://localhost:9900",
+        "users": "http://localhost:7072",
+        "vendors": "http://localhost:7065"
+    }
+
+}
